@@ -14,4 +14,9 @@ function makeCopy(a) {
 }
 var copy = makeCopy(arras);
 
-console.log(copy);
+//--или (по learn.javascript.ru)
+var clone = {};
+
+for (var key in arras) {
+	clone[key] = arras[key];
+}
